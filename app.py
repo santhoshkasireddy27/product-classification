@@ -2,10 +2,10 @@ import streamlit as st
 import tensorflow as tf
 import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import tensorflow as tf
 
-# Load saved components
-model = tf.keras.models.load_model('model.h5')
-
+# Load the model
+model = tf.keras.models.load_model("model.keras")
 with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
